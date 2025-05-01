@@ -1,0 +1,23 @@
+[build-system]
+    requires = ["hatchling >= 1.26"]
+    build-backend = "hatchling.build"
+
+[project]
+    name = "experimentele_tools_package"
+    version = "0.0.1"
+    authors = [
+        { name="Free Staquet", email="freestaquet@hotmail.com" },
+    ]
+    description = "Package with tools for Experimentele Basistechnieken"
+    readme = "README.md"
+    requires-python = ">=3.9"
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+    ]
+    license = "MIT"
+    license-files = ["LICENSE.*"]
+
+[project.urls]
+    Homepage = "https://github.com/freestket/experimentele_tools_package"
+    Issues = "https://github.com/freestket/experimentele_tools_package/issues"
