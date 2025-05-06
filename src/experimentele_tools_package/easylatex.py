@@ -35,10 +35,10 @@ def generate_latex_table(data, table_header, caption_text, label_text) -> str:
     #Generate table beginning:
     latex_table = ""
     latex_table += "\\begin{table}[h!]\n"
-    latex_table += "\t\centering\n"
-    latex_table += f"\t\caption{caption}\n"
+    latex_table += "\t\\centering\n"
+    latex_table += f"\t\\caption{caption}\n"
     latex_table += f"\t\\begin{tabular_cmd}{columns_cmd}\n"
-    latex_table += "\t\t\hline\n"
+    latex_table += "\t\t\\hline\n"
 
     #Generate headerline:
     headerline = "\t\t"
@@ -48,7 +48,7 @@ def generate_latex_table(data, table_header, caption_text, label_text) -> str:
             headerline += " & "
         else:
             headerline += " \\\\\n"
-    headerline += "\t\t\hline\hline\n"
+    headerline += "\t\t\\hline\\hline\n"
 
     latex_table += headerline
 
@@ -61,11 +61,11 @@ def generate_latex_table(data, table_header, caption_text, label_text) -> str:
                 new_line += " & "
             else:
                 new_line += " \\\\\n"
-                new_line += "\t\t\hline\n"
+                new_line += "\t\t\\hline\n"
         latex_table += new_line
 
-    latex_table += "\t\end{tabular}\n"
-    latex_table += f"\t\label{label_string}\n"
-    latex_table += "\end{table}\n"
+    latex_table += "\t\\end{tabular}\n"
+    latex_table += f"\t\\label{label_string}\n"
+    latex_table += "\\end{table}"
 
     return latex_table

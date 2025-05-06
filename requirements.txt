@@ -1,0 +1,6 @@
+# Required Python packages
+numpy
+sympy
+matplotlib
+scipy
+unittest
