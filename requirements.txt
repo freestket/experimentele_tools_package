@@ -3,4 +3,3 @@ numpy
 sympy
 matplotlib
 scipy
-unittest
