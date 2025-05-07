@@ -3,6 +3,15 @@ import matplotlib.pyplot as plt #Plotten
 from scipy.optimize import curve_fit #Het effectieve fitprogramma, dit werkt met least-squares method (dus chi^2). Voor meer mogelijkheden kan later nog scipy ODR geimport worden.
 from scipy.stats import chi2 #Chi^2 statistiek
 import inspect #Dien om de parameter namen uit de modelfunctie te halen.
+"""
+Contains classes and functions to perform fits of models onto data
+
+TODO:
+    EasyFit:
+        - add customization options (mainly for plotting, multiple graphs, etc.)
+
+    Add other fitting methods
+"""
 
 class EasyFit:
     """

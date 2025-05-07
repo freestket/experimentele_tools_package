@@ -7,6 +7,8 @@ A library that contains general functions to be used in data analysis
 TODO:
     Documentation for existing functions
     Add generic error propagation function
+
+    Figure out possibilities for statistics functions
 """
 
 def bereken_gemiddelde(metingen):

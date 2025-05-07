@@ -4,10 +4,12 @@ A package containing useful tools to make the transition from data/software to L
 TODO:
     Check/finish documentation
     Add table customization options
+
+    Figure out possibilities for figure LaTeX generators
 """
 
 
-def generate_latex_table(data, table_header, caption_text, label_text) -> str:
+def generate_latex_table(data: list, table_header: list, caption_text: str, label_text: str) -> str:
     """
     This function generates a LaTeX table as a string when provided with a data list of columns a header, caption and label.
     The string can then be copied and pasted into a LaTeX editor.
