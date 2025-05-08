@@ -3,9 +3,10 @@
 ## TODO:
 
 - Tests (python3 -m unittest discover -s tests -p *_test.py)
-- Pipeline
 - Features
 - Documentation
+- Staging branch
+- Branch protection
 
 ## easyfit.py
 
